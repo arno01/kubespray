@@ -169,6 +169,7 @@
       register: _felix_cmd
       ignore_errors: True
       changed_when: False
+      check_mode: no
 
     - name: Calico | Set kubespray FelixConfiguration
       set_fact:
@@ -211,6 +212,7 @@
       register: _calico_pool_cmd
       ignore_errors: True
       changed_when: False
+      check_mode: no
 
     - name: Calico | Set kubespray calico network pool
       set_fact:
@@ -310,6 +312,7 @@
       register: _bgp_config_cmd
       ignore_errors: True
       changed_when: False
+      check_mode: no
 
     - name: Calico | Set kubespray BGP Configuration
       set_fact:

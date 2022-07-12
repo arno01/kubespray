@@ -5,6 +5,7 @@
   register: kube_control_planes_raw
   ignore_errors: yes
   changed_when: false
+  check_mode: no
 
 - name: Set fact joined_control_panes
   set_fact:
